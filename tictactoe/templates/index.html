@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tateti</title>
+    <style>
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            font-size: 3em;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        {% for row in range(3) %}
+        <tr>
+            {% for col in range(3) %}
+            <td class="cell" id="cell_{{ row }}_{{ col }}" onclick="makeMove({{ row }}, {{ col }})"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <script>
+        function makeMove(row, col) {
+            fetch('/make_move', {
+                method: 'POST',
+                body: new URLSearchParams({row: row, col: col}),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById(`cell_${row}_${col}`).innerText = data.current_player;
+                    if (data.winner) {
+                        alert(`¡El jugador ${data.winner} ha ganado!`);
+                        location.reload();
+                    } else if (data.draw) {
+                        alert('¡Empate!');
+                        location.reload();
+                    }
+                } else {
+                    alert('¡Esa casilla ya está ocupada!');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+

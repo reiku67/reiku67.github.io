@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="stylesC.css"> <!-- Enlace al mismo archivo CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <section id="contacto">
+            <h2>Contactame</h2>
+            <p>¡Haz clic en los enlaces de abajo para encontrarme en mis redes sociales!</p>
+            <div class="redes-sociales">
+                <a href="https://twitter.com/ppppjmt"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://github.com/tu_usuario_de_github"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://soundcloud.com/reiku67"><i class="fab fa-soundcloud fa-3x"></i></a>
+                    
+                
+            <!-- Añade más enlaces según necesites -->
+            </div>
+            <div class="contact-form">
+            <h3>¿Quieres contactarme directamente? Envíame un correo:</h3>
+            <form action="mailto:pablo.jm.tarifa@gmail.com" method="post" enctype="text/plain">
+                <h3>PABLO.JM.TARIFA@GMAIL.COM</h3>
+                <input type="text" name="subject" placeholder="Asunto" required><br>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </section>
+    </div>
+    <div id="hora"></div>
+    <script src="hora.js"></script>
+</body>
+</html>

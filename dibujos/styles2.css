@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden; /* Esto ocultará la barra de desplazamiento vertical */
+}
+
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.centrado {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para alinear verticalmente los elementos */
+    justify-content: center; /* Para centrar verticalmente los elementos */
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: center center; /* Establece el origen de la transformación en el centro de la imagen */
+}
+.descripcion {
+    color: white;
+}
+
+.zoom-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #555;
+}

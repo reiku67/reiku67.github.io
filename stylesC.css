@@ -1,0 +1,69 @@
+/* Estilos CSS para dar formato a tu página en modo oscuro */
+
+body {
+    font-family: Noto Sans, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    position: center;
+  }
+  
+.redes-sociales a {
+    color: #bbb; /* Color de los enlaces */
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  font-family: Noto Sans, sans-serif; /* Cambia la fuente para los campos de entrada y textarea */
+  background-color: #333;
+  color: #fff;
+  width: 100%; /* Haz que los campos de entrada y el área de texto ocupen todo el ancho disponible */
+  height: 40px; /* Ajusta la altura de los campos de entrada */
+  margin-bottom: 20px; /* Añade un espacio más grande entre los campos de entrada y el área de texto */
+  box-sizing: border-box; /* Incluye el ancho del borde y el relleno en el ancho total */
+  text-align: center; /* Centra el texto dentro de los campos de entrada y el área de texto */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+  height: 100px; /* Ajusta la altura del área de texto */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%; /* Haz que los campos de entrada y el área de texto ocupen todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el ancho del borde y el relleno en el ancho total */
+    margin-bottom: 20px;
+    height: 50px;
+}  
+
+.email-display {
+    text-transform: uppercase; /* Muestra el texto en mayúsculas */
+    font-family: 'Courier New', monospace; /* Cambia la fuente */
+    font-size: 18px; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin-bottom: 20px; /* Añade un espacio más grande entre el correo electrónico y el siguiente campo */
+  }
+
+  
+
+/* Estilos CSS para centrar la página horizontalmente */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Margen automático para centrar horizontalmente */
+}
+
+body, html {
+
+    margin: auto;
+    display: flex;
+}
+
+#hora {
+  position: fixed;
+  bottom: 5px;
+  right: 20px;
+  color:#ffffff
+  background-color #fff;
+  padding: 5px 10px;
+  border: 1px solid #000;
+}

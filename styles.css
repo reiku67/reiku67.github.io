@@ -1,0 +1,169 @@
+/* Estilos para el encabezado */
+.header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Centrar todo el contenido del encabezado */
+}
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-image: url('img/background.jpeg');
+    background-size: cover; /* Esto ajustará la imagen para que cubra todo el fondo */
+    /* También puedes usar 'background-repeat' y 'background-position' para ajustar la repetición y la posición de la imagen de fondo, respectivamente */
+    background-position: center;
+    background-size: contain
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Estilo para dispositivos móviles (pantallas con un ancho máximo de 600px, por ejemplo) */
+@media only screen and (max-width: 600px) {
+    body {
+        /* Para dispositivos móviles, la imagen se ajustará al ancho de la pantalla y no estará centrada */
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+/* Estilo para dispositivos de escritorio */
+@media only screen and (min-width: 601px) {
+    body {
+        /* Para dispositivos de escritorio, la imagen se centrará horizontalmente */
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.profile {
+    display: inline-block; /* Para centrar horizontalmente */
+    text-align: center; /* Centrar el texto dentro del perfil */
+    margin: 0 auto; /* Centrar horizontalmente el perfil */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block; /* Asegurar que la imagen esté centrada */
+    margin-left: auto; /* Centrar horizontalmente la imagen */
+    margin-right: auto; /* Centrar horizontalmente la imagen */
+}
+
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los proyectos */
+.container {
+    text-align: center; /* Centrar el contenido de la sección de proyectos */
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: flex; /* Cambiar a flexbox */
+    flex-wrap: wrap; /* Permitir que los proyectos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar horizontalmente los proyectos */
+}
+
+/* Estilos para el encabezado y proyectos (mantener los estilos anteriores) */
+
+.project {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    margin: 10px; /* Añadir margen entre los proyectos */
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+    overflow: hidden; /* Ocultar cualquier desbordamiento de la imagen */
+    position: relative; /* Permite posicionar el elemento hijo (la imagen) */
+    transition: transform 0.4s ease; /* Transición suave en la propiedad transform */
+}
+
+.project:hover {
+    transform: scale(1.1); /* Aplica un zoom-in del 10% al pasar el cursor sobre el proyecto */
+}
+
+
+.project img {
+    width: 100%; /* Ajustar la imagen al 100% del contenedor */
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+    object-fit: cover; /* Ajustar la imagen manteniendo su relación de aspecto */
+    display: block; /* Hacer que la imagen sea un elemento de bloque */
+    margin: auto;
+}
+
+
+/* Estilos para el enlace de la biografía */
+.enlace-biografia {
+    color: #617a9e;
+    cursor: pointer;
+}
+
+#hora {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    color:#ffffff
+    background-color #fff;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+footer {
+    position: relative; /* Establece la posición como relativa para el pie de página */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    background-color: #000000; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido horizontalmente */
+    height: 200px; /* Establece una altura para el pie de página */
+}
+
+.footer-content {
+    margin-bottom: 600px; /* Espacio entre el contenido del pie de página y la imagen */
+}
+
+.footer-image {
+    position: absolute; /* Establece la posición como absoluta para la imagen */
+    bottom: 10px; /* La imagen estará 20px arriba del fondo del pie de página */
+    left: 50%; /* La imagen estará centrada horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    width: 500px; /* Ancho deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .footer-image {
+        width: 300px; /* Ancho más pequeño para dispositivos móviles */
+    }
+}
+
+
+
