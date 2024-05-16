@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */ /* Eliminamos esto para permitir el desplazamiento vertical */
+}
+
+.fullscreen-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    width: 100vw; /* Ancho total de la ventana */
+    height: 100vh; /* Altura total de la ventana */
+}
+
+.fullscreen-img {
+    flex: 1; /* Las imágenes ocupan todo el espacio disponible */
+    overflow: hidden; /* Evita que la imagen se desborde */
+    position: relative; /* Para posicionar la imagen dentro del contenedor */
+    display: flex; /* Utiliza flexbox para centrar la imagen */
+    justify-content: flex-start; /* Alinea la imagen a la esquina izquierda */
+    align-items: flex-start; /* Alinea la imagen a la esquina superior */
+}
+
+.fullscreen-img img {
+    max-width: 100%; /* La imagen no puede ser más ancha que su contenedor */
+    max-height: 100%; /* La imagen no puede ser más alta que su contenedor */
+    object-fit: contain; /* Preserva la relación de aspecto */
+}
+
+.normal-content {
+    padding: 20px;
+}
+
