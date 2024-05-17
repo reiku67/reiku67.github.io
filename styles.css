@@ -165,5 +165,18 @@ footer {
     }
 }
 
+.project iframe {
+    width: 100%; /* Asegurar que el iframe tome el 100% del ancho del contenedor */
+    border-radius: 5px; /* Añadir bordes redondeados si deseas */
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff5500; /* Color de texto del enlace */
+    font-weight: bold;
+}
+
 
 
