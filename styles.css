@@ -11,7 +11,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-image: url('img/background.jpeg');
+    background-image: url("img/GKnjiNgXQAA06xP.jpg");
     background-size: cover; /* Esto ajustará la imagen para que cubra todo el fondo */
     /* También puedes usar 'background-repeat' y 'background-position' para ajustar la repetición y la posición de la imagen de fondo, respectivamente */
     background-position: center;
